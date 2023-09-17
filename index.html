@@ -1,427 +1,238 @@
-/* Estilos generales */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('../static/images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+<!DOCTYPE html>
+<html lang="es">
 
-/* Estilos del encabezado */
-header {
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0px 0;
-}
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <!-- Puedes agregar más secciones aquí -->
+    </ul>
+</nav>
 
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Tu Nombre - Portafolio</title>
+</head>
+<body>
+    <header>
+        <div class="background">
+            <img src="/static/images/background.jpg" alt="Fondo">
+        </div>
+        <div class="profile">
+            <img src="/static/images/perfil2.png" alt="Tu Foto" class="profile-image">
+            <h1>Javier Pérez</h1>
+            <p>Desarrollador full stack junior.</p>
+            <div class="buttons">
+                <a href="mailto:playgames.j.g17@gmail.com">Correo</a>
+                <a href="https://www.linkedin.com/in/javier-perez-780145263" target="_blank">LinkedIn</a>
+                <a href="https://github.com/eljega" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
 
-.background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Estilo de la foto de perfil */
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    display: block;
-    border: 3px solid #630466;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 10px 0;
-}
-
-p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #630466;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Estilos de la sección "Sobre Mí" */
-.about-me {
-    background-color: #0000001c;
-    padding: 50px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-
-.about-me-text {
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.about-me h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.about-me p {
-    font-size: 1.2em;
-}
-
-/* Estilos de la información personal */
-.personal-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Espaciado entre columnas */
-    text-align: left; /* Alinea el texto a la izquierda en las columnas */
-    margin-top: 40px; /* Agrega espacio superior entre la sección "Sobre Mí" y la información personal */
-    margin-left: 50px;
-}
-
-.info-item {
-    margin-bottom: 3px; /* Espaciado inferior entre elementos */
-    text-align: left; /* Alinea el texto a la izquierda en las columnas */
-}
-
-.info-label {
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.info-value {
-    font-weight: normal;
-    color: #ffffff;
-}
-
-
-nav {
-    background-color: #bf0099;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
+    <section id= "sobre mi" class="about-me">
+        <div class="about-me-text">
+            <h2>Sobre Mí</h2>
+            <p>Aquí voy a escribir una descripción sobre mi y mis habilidades.
+                Aquí voy a escribir una descripción sobre mi y mis habilidades.
+                Aquí voy a escribir una descripción sobre mi y mis habilidades.
+                Aquí voy a escribir una descripción sobre mi y mis habilidades.
+                Aquí voy a escribir una descripción sobre mi y mis habilidades.
+                Aquí voy a escribir una descripción sobre mi y mis habilidades.
+            </p>
+        </div>
+        <div class="personal-info">
+            <div class="info-item">
+                <span class="info-label">NOMBRE:</span>
+                <span class="info-value">Javier Pérez</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">EDAD:</span>
+                <span class="info-value">25</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">UBICACIÓN:</span>
+                <span class="info-value">Colombia/Medellin</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">CORREO:</span>
+                <span class="info-value">Playgames.j.g17@gmail.com</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Whatsapp:</span>
+                <span class="info-value">(+57) 3503620823</span>
+            </div>
+            <!-- Agrega más información personal aquí -->
+        </div>
+    </section>
     
-}
-
-
-/* Estilos para la sección "Portfolio" */
-#portfolio {
-    background-color: #f5f5f5; /* Puedes elegir un color de fondo que contraste con el encabezado */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.portfolio-header {
-    margin-bottom: 30px;
-}
-
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project-card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-    max-width: 300px;
-}
-
-.project-card h3 {
-    font-size: 1.5em;
-}
-
-.project-card p {
-    font-size: 1.2em;
-}
-
-.project-image img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.project-links a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #630466;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Estilos para las imágenes de las herramientas en los proyectos */
-.project-tools img {
-    max-width: 60px; /* Ajusta el tamaño según tus necesidades */
-    margin-right: 10px; /* Espacio entre las imágenes */
-}
-
-
-/* Estilos para la sección "Educación" */
-#educacion {
-    background-color: #f9f9f9; /* Puedes elegir un color de fondo que contraste con el encabezado */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.education-header {
-    margin-bottom: 30px;
-}
-
-.education-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.education-item {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-    max-width: 300px;
-}
-
-.education-item h3 {
-    font-size: 1.5em;
-}
-
-.education-item p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.certificate-link a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-
-/* Estilos para la sección "Habilidades" */
-#habilidades {
-    background-color: #f5f5f5; /* Puedes elegir un color de fondo que contraste con el encabezado */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.skills-header {
-    margin-bottom: 30px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.skill-item {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
-}
-
-.skill-item img {
-    max-width: 100px; /* Ajusta el tamaño según tus preferencias */
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.skill-item h3 {
-    font-size: 1.5em;
-}
-
-.skill-item p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-
-/* Estilos para la sección "Contacto" */
-#contacto {
-    background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
-    padding: 50px 0;
-    text-align: center;
-    background: url('/static/images/background2.png') no-repeat center center fixed;
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo en su lugar mientras se desplaza */
-}
-
-.contact-header {
-    margin-bottom: 30px;
-    color: #ffffff;
-    text-shadow: 1px 1px 0 rgb(0, 0, 0); /* Sombra de texto menos difusa */
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    <section id="portfolio">
+        <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <p>Aquí puedes explorar algunos de mis proyectos destacados.</p>
+        </div>
+        <div class="project-list">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <h3>Título del Proyecto 1</h3>
+                <p>Descripción breve del Proyecto 1. Puedes explicar de qué se trata y cuáles son sus principales características.</p>
+                <div class="project-image">
+                    <img src="/static/images/Tetris.png" alt="Proyecto 1">
+                </div>
+                <div class="project-tools">
+                    <img src="/static/images/unity.png" alt="Python">
+                    <img src="/static/images/Csharp.png" alt="Flask">
+                </div>
+                <div class="project-links">
+                    <a href="https://eljega.github.io/GrupoCAPLogistic/">Ver Proyecto</a>
+                </div>
+            </div>
     
-}
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <h3>Título del Proyecto 2</h3>
+                <p>Descripción breve del Proyecto 2. Puedes explicar de qué se trata y cuáles son sus principales características.</p>
+                <div class="project-image">
+                    <img src="imagen_proyecto2.jpg" alt="Proyecto 2">
+                </div>
+                <div class="project-links">
+                    <a href="enlace_proyecto2">Ver Proyecto</a>
+                </div>
+            </div>
 
-/* Estilos para el formulario de contacto */
-.contact-form {
-    background-color: #91188b;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-    max-width: 400px; /* Ancho máximo para el formulario */
+            
     
-   
-}
-
-.contact-form h3 {
-    font-size: 1.5em;
-    color: #f9f9f9;
-    text-shadow: 1px 1px 0 rgb(0, 0, 0); /* Sombra de texto menos difusa */
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 1.2em;
-    max-width: 90%; /* Ancho máximo para los campos de entrada */
-}
-
-
-.contact-details {
-    background-color: #91188b;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-    max-width: 450px;
+            <!-- Puedes agregar más proyectos aquí -->
+        </div>
+    </section>
     
-}
-
-.contact-details h3 {
-    font-size: 1.5em;
-    color: #ffffff;
-}
-
-
-.contact-details p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.contact-details h3, .contact-details p {
-    text-shadow: 1px 1px 0 rgb(0, 0, 0); /* Sombra de texto menos difusa */
-}
-
-.contact-details a {
-    color: #FF5733; /* Cambia el color a tu elección, en este caso, rojo (#FF5733) */
-}
-
-.social-links {
-    margin-top: -60px;
-    color: #ffffff; 
-}
-
-.social-links h3 {
-    font-size: 1.5em;
+    <section id="educacion">
+        <div class="education-header">
+            <h2>Educación</h2>
+            <p>Lista de cursos y certificados que he completado.</p>
+        </div>
+        <div class="education-list">
+            <!-- Curso 1 -->
+            <div class="education-item">
+                <h3>Nombre del Curso 1</h3>
+                <p>Institución/Organización: Nombre de la plataforma o entidad</p>
+                <p>Fecha de Finalización: [Mes y año]</p>
+                <div class="certificate-link">
+                    <a href="enlace_certificado1" target="_blank">Ver Certificado</a>
+                </div>
+            </div>
     
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 10px;
+            <!-- Curso 2 -->
+            <div class="education-item">
+                <h3>Nombre del Curso 2</h3>
+                <p>Institución/Organización: Nombre de la plataforma o entidad</p>
+                <p>Fecha de Finalización: [Mes y año]</p>
+                <div class="certificate-link">
+                    <a href="enlace_certificado2" target="_blank">Ver Certificado</a>
+                </div>
+            </div>
     
-}
+            <!-- Puedes agregar más cursos aquí -->
+        </div>
+    </section>
+    
 
-/* Estilos CSS para la imagen de contacto */
-.contact-image {
-    text-align: center; /* Centra la imagen horizontalmente */
-    margin-top: 40px; /* Espacio superior entre el texto y la imagen */
-}
+    <section id="habilidades">
+        <div class="skills-header">
+            <h2>Habilidades</h2>
+            <p>Lista de tecnologías y habilidades que poseo.</p>
+        </div>
+        <div class="skills-list">
+            <!-- Habilidad 1: Python -->
+            <div class="skill-item">
+                <img src="/static/images/python.png" alt="Python">
+                <h3>Python</h3>
+                <p>Nivel: Intermedio</p>
+            </div>
+    
+            <!-- Habilidad 2: C# -->
+            <div class="skill-item">
+                <img src="/static/images/Csharp.png" alt="C#">
+                <h3>C#</h3>
+                <p>Nivel: Intermedio</p>
+            </div>
+    
+            <!-- Habilidad 3: Unity 2D -->
+            <div class="skill-item">
+                <img src="/static/images/unity.png" alt="Unity 2D">
+                <h3>Unity 2D</h3>
+                <p>Nivel: Avanzado</p>
+            </div>
 
-.contact-image img {
-    max-width: 300px; /* Tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción de aspecto original */
-    margin-top: -50px;
-    transition: transform 0.2s ease-in-out; /* Efecto de transición suave */
-}
+            <!-- Habilidad 4: HTML -->
+            <div class="skill-item">
+                <img src="/static/images/html.png" alt="Unity 2D">
+                <h3>HTML</h3>
+                <p>Nivel: Basico</p>
+            </div>
 
+            <!-- Habilidad 5: CSS -->
+            <div class="skill-item">
+                <img src="/static/images/css.png" alt="Unity 2D">
+                <h3>CSS</h3>
+                <p>Nivel: Basico</p>
+            </div>
+    
+            <!-- Puedes agregar más habilidades aquí -->
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <div class="contact-header">
+            <h2>Contacto</h2>
+            <p>¡Estoy aquí para responder tus preguntas y comentarios!</p>
+        </div>
+        <div class="contact-info">
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <h3>Envíame un mensaje</h3>
+                <form action="procesar_formulario.php" method="post">
+                    <!-- Los campos del formulario aquí -->
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <!-- Información de contacto -->
+            <div class="contact-details">
+                <h3>Información de contacto</h3>
+                <p>Correo electrónico: <a href="Playgames.j.g17@gmail.com">Playgames.j.g17@gmail.com</a></p>
+                <p>Número de WhatsApp: <a href="https://wa.me/+573503620823" target="_blank">(+57) 3137686003</a></p>
+                <!-- Puedes agregar más información de contacto aquí -->
+                <div class="contact-image">
+                    <img src="/static/images/programador.png" alt="Imagen de contacto">
+                </div>
+            </div>
+        </div>
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.linkedin.com/in/javier-perez-780145263" target="_blank">
+                <img src="/static/images/linkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/eljega" target="_blank">
+                <img src="/static/images/github.png" alt="GitHub">
+            </a>
+            <!-- Puedes agregar más enlaces a redes sociales aquí -->
+        </div>
+    </section>
+    
+    
+    <section class="projects">
+        <!-- Aquí puedes agregar tus proyectos -->
+        <!-- Cada proyecto podría estar en un div con su descripción, imagen, enlaces, etc. -->
+    </section>
 
-/*ajustar el tamaño de las imagenes de contacto*/
-
-/* Estilos para las imágenes de redes sociales */
-.social-links img {
-    max-width: 40px; /* Ajusta el ancho máximo según tu preferencia */
-    height: auto; /* Mantiene la proporción de aspecto original */
-    border: 2px solid transparent; /* Borde transparente de 2px alrededor de la imagen */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    transition: border-color 0.3s, transform 0.3s; /* Efecto de transición suave en el borde y el tamaño */
-    border-color: #ffffff;
-}
-
-.social-links img:hover {
-    border-color: #007BFF; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
-    transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
-}
-
-
-
-/* Añade estilos personalizados según tu preferencia visual. */
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
