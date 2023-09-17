@@ -1,0 +1,379 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../static/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 0;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo de la foto de perfil */
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #630466;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #630466;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilos de la sección "Sobre Mí" */
+.about-me {
+    background-color: #0000001c;
+    padding: 50px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.about-me-text {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.about-me h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+}
+
+/* Estilos de la información personal */
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espaciado entre columnas */
+    text-align: left; /* Alinea el texto a la izquierda en las columnas */
+    margin-top: 40px; /* Agrega espacio superior entre la sección "Sobre Mí" y la información personal */
+    margin-left: 50px;
+}
+
+.info-item {
+    margin-bottom: 3px; /* Espaciado inferior entre elementos */
+}
+
+.info-label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.info-value {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+
+nav {
+    background-color: #bf0099;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+
+/* Estilos para la sección "Portfolio" */
+#portfolio {
+    background-color: #f5f5f5; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio-header {
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+}
+
+.project-card p {
+    font-size: 1.2em;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #630466;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para las imágenes de las herramientas en los proyectos */
+.project-tools img {
+    max-width: 60px; /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+
+/* Estilos para la sección "Educación" */
+#educacion {
+    background-color: #f9f9f9; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education-header {
+    margin-bottom: 30px;
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.education-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+}
+
+.education-item p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.certificate-link a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Estilos para la sección "Habilidades" */
+#habilidades {
+    background-color: #f5f5f5; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-header {
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.skill-item img {
+    max-width: 100px; /* Ajusta el tamaño según tus preferencias */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+}
+
+.skill-item p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+/* Estilos para la sección "Contacto" */
+#contacto {
+    background-color: #f9f9f9; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-header {
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    max-width: 400px; /* Ancho máximo para el formulario */
+    
+   
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1.2em;
+    max-width: 90%; /* Ancho máximo para los campos de entrada */
+}
+
+
+.contact-details {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    max-width: 450px;
+}
+
+.contact-details h3 {
+    font-size: 1.5em;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 1.5em;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
+/*ajustar el tamaño de las imagenes de contacto*/
+
+/* Estilos para las imágenes de redes sociales */
+.social-links img {
+    max-width: 40px; /* Ajusta el ancho máximo según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto original */
+}
+
+/* Añade estilos personalizados según tu preferencia visual. */
