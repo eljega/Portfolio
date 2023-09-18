@@ -184,6 +184,21 @@ p {
     margin-bottom: 40px;
 }
 
+.about-me .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.about-me .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about-me-text {
     margin-bottom: 20px;
     color: #ffffff;
