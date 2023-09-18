@@ -174,8 +174,18 @@ p {
 }
 
 /* Estilos de la sección "Sobre Mí" */
+#sobre mi {
+    background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    padding: 50px 0;
+    text-align: center;
+    background: url('/static/images/background.png') no-repeat center center fixed;
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo en su lugar mientras se desplaza */
+}
+
 .about-me {
-    background-color: #171616;
+    background-color: #17161600;
     padding: 50px;
     text-align: center;
     max-width: 800px;
