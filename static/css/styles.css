@@ -91,11 +91,13 @@ header {
 
 @keyframes border-color-animation {
     0% { border-color: #f1ca09; } /* Color inicial */
-    25% { border-color: #b6ad01; } /* Color intermedio 1 */
-    50% { border-color: #630466; } /* Color intermedio 2 */
+    25% { border-color: #630466; } /* Color intermedio 1 */
+    50% { border-color: #97900e; } /* Color intermedio 2 */
     75% { border-color: #dd03c7; } /* Color intermedio 3 */
     100% { border-color: #f1ca09; } /* Color final (vuelve al color inicial) */
 }
+
+
 
 /* Aplicar animación cuando la clase "animate-profile" está presente */
 .animate-profile {
@@ -218,6 +220,7 @@ nav {
     animation: changeColor 6s infinite alternate; /* Animación continua */
     background: linear-gradient(90deg, #f1ca09, #9628bd); /* Gradiente de colores */
     background-size: 200% 100%; /* Tamaño del gradiente */
+    
 }
 
 /* Definición de la animación */
@@ -253,13 +256,20 @@ nav a {
 
 /* Estilos para la sección "Portfolio" */
 #portfolio {
-    background-color: #f5f5f5; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
+    background-color: #3d0b50;
 }
+
 
 .portfolio-header {
     margin-bottom: 30px;
+    color: #ffffff;
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    font-size: 1.3em; /* Aumenta el tamaño de la fuente */
+    max-width: 100%; /* Evita que el texto se salga de los límites */
+    margin-top: -50px;
 }
 
 .project-list {
@@ -545,5 +555,3 @@ nav a {
     border-color: #007BFF; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
     transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
-
-/* Añade estilos personalizados según tu preferencia visual. */
