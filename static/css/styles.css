@@ -238,6 +238,7 @@ p {
     text-align: left; /* Alinea el texto a la izquierda en las columnas */
     margin-top: 40px; /* Agrega espacio superior entre la sección "Sobre Mí" y la información personal */
     margin-left: 50px;
+    background-color: #00000000;
 }
 
 .info-item {
