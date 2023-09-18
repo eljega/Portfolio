@@ -212,6 +212,12 @@ p {
     color: #ffffff;
 }
 
+/* Ajuste de estilos en dispositivos móviles */
+@media (max-width: 767px) {
+    .personal-info {
+        display: block; /* Cambia a un diseño de una columna en dispositivos móviles */
+    }
+}
 
 nav {
     background-color: #bf0099;
