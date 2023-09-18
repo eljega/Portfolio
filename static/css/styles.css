@@ -199,6 +199,13 @@ p {
     object-fit: cover;
 }
 
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .background {
+        min-height: 100vh; /* Asegura que la imagen de fondo cubra al menos la altura del viewport */
+    }
+}
+
 .about-me-text {
     margin-bottom: 20px;
     color: #ffffff;
