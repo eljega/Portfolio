@@ -44,6 +44,8 @@ header {
     padding: 0px 0;
     position: relative; /* Añade posición relativa para crear un contexto de apilamiento */
     overflow: hidden; /* Oculta cualquier contenido que pueda desbordar la sección */
+    height: 100vh; /* Establece la altura para ocupar toda la ventana */
+    
 }
 
 .background {
@@ -53,12 +55,14 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
+    
 }
 
 .background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 /* Ajustes para dispositivos móviles */
@@ -69,89 +73,27 @@ header {
 }
 
 
-/* Estilos para el círculo de tecnologías */
-.tech-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px; /* Ancho del círculo */
-    
-    border: 2px solid #ffffff00; /* Borde blanco transparente para el círculo */
-    border-radius: 50%; /* Borde redondeado para formar un círculo */
-    position: relative; /* Agregamos posicionamiento relativo */
-    animation: rotate 10s linear infinite;
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    top: -200px; /* Ajusta la posición vertical */
-    left: 200px; /* Ajusta la posición horizontal */
-    
-}
-
-.tech-logo {
-    position: absolute; /* Hacemos que los logos sean posicionados absolutamente dentro del círculo */
-    width: 40px; /* Tamaño de los logos */
-    height: 40px; /* Tamaño de los logos */
-    margin: auto;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra completamente */
-    transform-origin: center;
-    transition: transform 0.3s;
-    
-}
-
-/* Definimos las posiciones de los logos usando ángulos */
-.tech-logo:nth-child(1) {
-    transform: rotate(0deg) translateX(30px); /* Alineado hacia arriba */
-}
-
-.tech-logo:nth-child(2) {
-    transform: rotate(72deg) translateX(30px); /* Alineado a 72 grados */
-}
-
-.tech-logo:nth-child(3) {
-    transform: rotate(144deg) translateX(30px); /* Alineado a 144 grados */
-}
-
-.tech-logo:nth-child(4) {
-    transform: rotate(216deg) translateX(30px); /* Alineado a 216 grados */
-}
-
-.tech-logo:nth-child(5) {
-    transform: rotate(288deg) translateX(30px); /* Alineado a 288 grados */
-}
-/* Animación de rotación */
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Cambio de tamaño y detener la rotación al pasar el mouse */
-.tech-circle:hover .tech-logo {
-    
-    animation-play-state: paused; /* Detiene la animación al pasar el mouse */
-}
-
-
-.tech-circle img {
-    max-width: 70px; /* Ajusta el tamaño según tus preferencias */
-    
-}
-
 
 /* Estilo de la foto de perfil */
 .profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
     border: 3px solid #630466;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    transform: translateY(-50px); /* Empieza 50px arriba de su posición final */
+    opacity: 0; /* Comienza invisible */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica transición suave */
 }
+
+/* Aplicar animación cuando la clase "animate-profile" está presente */
+.animate-profile {
+    transform: translateY(0); /* Lleva la imagen a su posición final */
+    opacity: 1; /* La hace visible */
+}
+
 
 h1 {
     font-size: 2em;
@@ -160,7 +102,7 @@ h1 {
 
 p {
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 6px 0;
 }
 
 .buttons a {
@@ -172,25 +114,34 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Agrega una transición suave para el cambio de color de fondo y el aumento de tamaño */
+    
+}
+
+.buttons a:hover {
+    background-color: #007BFF; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
+    transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
 
 /* Estilos de la sección "Sobre Mí" */
 #sobre-mi {
-    background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    background-color: #3b3b3b00;
     padding: 50px 0;
     text-align: center;
     background: url('/static/images/background2.png') no-repeat center center fixed;
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo en su lugar mientras se desplaza */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 20px; /* Ajusta el margen superior para alinear con los botones */
 }
 
+
 .about-me {
-    background-color: #3b3b3b;
+    background-color: #3b3b3b00;
     padding: 50px;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: -30px auto;
     overflow: hidden;
     margin-bottom: 40px;
     
@@ -219,7 +170,7 @@ p {
     text-align: left; /* Alinea el texto a la izquierda en las columnas */
     margin-top: 40px; /* Agrega espacio superior entre la sección "Sobre Mí" y la información personal */
     margin-left: 50px;
-    background-color: #3b3b3b;
+    background-color: #3b3b3b00;
 }
 
 .info-item {
