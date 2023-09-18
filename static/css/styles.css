@@ -35,6 +35,7 @@ body {
     }
 }
 
+
 /* Estilos del encabezado */
 header {
     text-align: center;
@@ -174,47 +175,27 @@ p {
 }
 
 /* Estilos de la sección "Sobre Mí" */
-#sobre mi {
+#sobre-mi {
     background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
-    background: url('/static/images/background.png') no-repeat center center fixed;
+    background: url('/static/images/background2.png') no-repeat center center fixed;
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen de fondo en su lugar mientras se desplaza */
 }
 
 .about-me {
-    background-color: #17161600;
+    background-color: #3b3b3b;
     padding: 50px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 40px;
+    
 }
 
-.about-me .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.about-me .background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 767px) {
-    .background {
-        min-height: 100vh; /* Asegura que la imagen de fondo cubra al menos la altura del viewport */
-    }
-}
 
 .about-me-text {
     margin-bottom: 20px;
@@ -238,7 +219,7 @@ p {
     text-align: left; /* Alinea el texto a la izquierda en las columnas */
     margin-top: 40px; /* Agrega espacio superior entre la sección "Sobre Mí" y la información personal */
     margin-left: 50px;
-    background-color: #00000000;
+    background-color: #3b3b3b;
 }
 
 .info-item {
@@ -248,7 +229,7 @@ p {
 
 .info-label {
     font-weight: bold;
-    color: #c41010;
+    color: #ffffff;
 }
 
 .info-value {
@@ -583,7 +564,3 @@ nav a {
     border-color: #007BFF; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
     transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
-
-
-
-/* Añade estilos personalizados según tu preferencia visual. */
