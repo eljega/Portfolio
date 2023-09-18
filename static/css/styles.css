@@ -86,6 +86,15 @@ header {
     transform: translateY(-50px); /* Empieza 50px arriba de su posición final */
     opacity: 0; /* Comienza invisible */
     transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica transición suave */
+    animation: border-color-animation 6s infinite; /* Aplica la animación de cambio de colores */
+}
+
+@keyframes border-color-animation {
+    0% { border-color: #f1ca09; } /* Color inicial */
+    25% { border-color: #b6ad01; } /* Color intermedio 1 */
+    50% { border-color: #630466; } /* Color intermedio 2 */
+    75% { border-color: #dd03c7; } /* Color intermedio 3 */
+    100% { border-color: #f1ca09; } /* Color final (vuelve al color inicial) */
 }
 
 /* Aplicar animación cuando la clase "animate-profile" está presente */
