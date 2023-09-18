@@ -42,13 +42,13 @@ header {
     justify-content: center;
     align-items: center;
     width: 120px; /* Ancho del círculo */
-    height: 120px; /* Alto del círculo */
+    
     border: 2px solid #ffffff00; /* Borde blanco transparente para el círculo */
     border-radius: 50%; /* Borde redondeado para formar un círculo */
     position: relative; /* Agregamos posicionamiento relativo */
     animation: rotate 10s linear infinite;
     cursor: pointer; /* Cambia el cursor al pasar por encima */
-    top: -70px; /* Ajusta la posición vertical */
+    top: -200px; /* Ajusta la posición vertical */
     left: 200px; /* Ajusta la posición horizontal */
     
 }
@@ -516,5 +516,3 @@ nav a {
 
 
 /* Añade estilos personalizados según tu preferencia visual. */
-
-
