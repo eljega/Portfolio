@@ -5,13 +5,34 @@ body {
     font-family: Arial, sans-serif;
     background: url('../static/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    
 }
 
-#inicio {
-    background-color: #000000; /* Puedes elegir un color de fondo que contraste con el encabezado */
-    padding: 50px 0;
-    text-align: center;
+/* Estilos para la sección #inicio en pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+    #inicio {
+        background-position: top center; /* Ajusta la posición del fondo */
+        padding: 30px 0; /* Ajusta el espacio interno superior e inferior */
+    }
+
+    .profile {
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Estilos para el círculo de tecnologías en dispositivos móviles */
+    .tech-circle {
+        width: 100px; /* Ajusta el tamaño del círculo */
+        height: 100px;
+        margin-right: 0; /* Elimina el margen derecho */
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .tech-logo {
+        width: 20px; /* Ajusta el tamaño de los logos */
+        height: 20px;
+        margin: 5px; /* Ajusta el margen entre los logos */
+    }
 }
 
 /* Estilos del encabezado */
