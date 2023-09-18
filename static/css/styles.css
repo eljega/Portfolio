@@ -11,27 +11,27 @@ body {
 @media (max-width: 767px) {
     #inicio {
         background-position: top center; /* Ajusta la posición del fondo */
-        padding: 30px 0; /* Ajusta el espacio interno superior e inferior */
+        padding: 60px 0; /* Aumenta el espacio interno superior e inferior */
+        text-align: center; /* Centra el contenido horizontalmente */
     }
 
     .profile {
         text-align: center; /* Centra el texto */
+        margin-top: 20px; /* Agrega espacio superior */
     }
 
     /* Estilos para el círculo de tecnologías en dispositivos móviles */
     .tech-circle {
-        width: 100px; /* Ajusta el tamaño del círculo */
-        height: 100px;
-        margin-right: 0; /* Elimina el margen derecho */
-        position: relative;
-        top: 0;
-        left: 0;
+        width: 120px; /* Ajusta el tamaño del círculo */
+        height: 120px;
+        top: 0; /* Elimina el desplazamiento vertical */
+        left: 0; /* Elimina el desplazamiento horizontal */
     }
 
     .tech-logo {
-        width: 20px; /* Ajusta el tamaño de los logos */
-        height: 20px;
-        margin: 5px; /* Ajusta el margen entre los logos */
+        width: 24px; /* Ajusta el tamaño de los logos */
+        height: 24px;
+        margin: 8px; /* Ajusta el margen entre los logos */
     }
 }
 
