@@ -77,19 +77,7 @@ header {
 
 
 /* Estilo de la foto de perfil  */
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 10px auto;
-    display: block;
-    border: 3px solid #630466;
-    margin-bottom: 10px;
-    transform: translateY(-50px); /* Empieza 50px arriba de su posición final */
-    opacity: 0; /* Comienza invisible */
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica transición suave */
-    animation: border-color-animation 6s infinite; /* Aplica la animación de cambio de colores */
-}
+
 
 
 @keyframes border-color-animation {
