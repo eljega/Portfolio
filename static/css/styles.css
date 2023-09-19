@@ -121,8 +121,8 @@ p {
     font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
     font-weight: bold; /* Hace que el texto sea más grueso */
     max-width: 100%; /* Evita que el texto se salga de los límites */
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.518);
 }
+
 
 .buttons a {
     display: inline-block;
@@ -358,7 +358,7 @@ nav a {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #9628bd;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -379,19 +379,62 @@ nav a {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.614); /* Agrega sombreado */
 }
 
-
+/*lineas para el carrusel de las imagenes y la animacion*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slides img {
+    width: 100%;
+    max-width: 250px; /* Ajusta el ancho máximo según tu diseño */
+    height: auto;
+    margin-left: -6px;
+  }
+  .carousel-nav {
+    display: none;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #888;
+    color: #fff;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #555;
+  }
+  
 
 
 /* Estilos para la sección "Educación" */
 #educacion {
-    background-color: #f9f9f9; /* Puedes elegir un color de fondo que contraste con el encabezado */
+    background-color: #c67bd6; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
 }
 
 .education-header {
+    font-size: 1.5em;
     margin-bottom: 30px;
+    margin-top: -40px; /* Mueve el texto hacia arriba */
+
 }
+
 
 .education-list {
     display: flex;
@@ -400,7 +443,7 @@ nav a {
 }
 
 .education-item {
-    background-color: #fff;
+    background-color: #9628bd;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin: 20px;
@@ -411,6 +454,27 @@ nav a {
 
 .education-item h3 {
     font-size: 1.5em;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    max-width: 100%;
+    margin-top: -10px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+h2{
+    color: #ffffff;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+e {
+    font-size: 1.2em;
+    margin: 6px 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    max-width: 100%; /* Evita que el texto se salga de los límites */
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
 }
 
 .education-item p {
@@ -422,11 +486,17 @@ nav a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #fed70d;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Agrega una transición suave para el cambio de color de fondo y el aumento de tamaño */
+}
+
+.certificate-link a:hover {
+    background-color: #c67bd6; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
+    transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
 
 
@@ -483,12 +553,17 @@ nav a {
 .skill-item h3 {
     font-size: 1.5em;
     color: #007BFF;
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 .skill-item p {
     font-size: 1.2em;
     margin: 10px 0;
+    color: #000000;
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%; /* Establece un ancho del 100% para que ocupe todo el espacio disponible */
 }
+
 
 
 /* Estilos para la sección "Contacto" */
