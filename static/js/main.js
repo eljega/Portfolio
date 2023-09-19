@@ -35,9 +35,3 @@ document.addEventListener("DOMContentLoaded", function () {
       setInterval(nextSlide, 3000);
     });
   });
-  
-  
-  
-  
-  
-  
