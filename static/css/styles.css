@@ -1,4 +1,5 @@
 /* Estilos generales */
+
 body {
     margin: 0;
     padding: 0;
@@ -37,6 +38,7 @@ body {
 
 
 /* Estilos del encabezado */
+
 header {
     text-align: center;
     color: #fff;
@@ -74,7 +76,7 @@ header {
 
 
 
-/* Estilo de la foto de perfil */
+/* Estilo de la foto de perfil  */
 .profile-image {
     border-radius: 50%;
     width: 150px;
@@ -83,10 +85,6 @@ header {
     display: block;
     border: 3px solid #630466;
     margin-bottom: 10px;
-    transform: translateY(-50px); /* Empieza 50px arriba de su posición final */
-    opacity: 0; /* Comienza invisible */
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica transición suave */
-    animation: border-color-animation 6s infinite; /* Aplica la animación de cambio de colores */
 }
 
 @keyframes border-color-animation {
@@ -114,6 +112,11 @@ h1 {
 p {
     font-size: 1.2em;
     margin: 6px 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    max-width: 100%; /* Evita que el texto se salga de los límites */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.518);
 }
 
 .buttons a {
@@ -147,9 +150,10 @@ p {
 }
 
 
+
 .about-me {
     background-color: #3b3b3b00;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     max-width: 800px;
     margin: -30px auto;
@@ -171,12 +175,23 @@ p {
     text-shadow: 2px 2px 0 rgb(0, 0, 0); /* Sombra de texto menos difusa */
 }
 
+@media (max-width: 767px){
+    .about-me h2{
+        margin-bottom: -10px;
+    }
+
+    .about-me{
+        margin: -60px auto;
+    }
+}
 
 .about-me p {
     font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
     font-weight: bold; /* Hace que el texto sea más grueso */
     font-size: 1.3em; /* Aumenta el tamaño de la fuente */
     max-width: 100%; /* Evita que el texto se salga de los límites */
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 
@@ -209,11 +224,25 @@ p {
 /* Ajuste de estilos en dispositivos móviles */
 @media (max-width: 767px) {
     .personal-info {
-        display: block; /* Cambia a un diseño de una columna en dispositivos móviles */
+        display: grid; /* Cambia a un diseño de dos columnas en dispositivos móviles */
+        grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+        gap: 10px; /* Espaciado entre columnas */
+        margin-top: -10px; /* Ajusta el margen superior para mover el contenido hacia arriba */
+        margin-left: -10px; /* Ajusta el margen izquierdo para mover el contenido hacia la izquierda */
+    }
+
+    .info-item {
+        width: 58%; /* Establece el ancho de cada elemento al 100% para ocupar todo el ancho de la columna */
+        margin-bottom: -5px; /* Agrega espacio inferior entre los elementos */
     }
 }
 
+
+
+
+
 /* Estilo de la barra de navegación */
+
 nav {
     padding: 10px 0;
     text-align: center;
@@ -239,6 +268,7 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
 
 nav li {
     display: inline;
@@ -290,6 +320,13 @@ nav a {
 
 .project-card h3 {
     font-size: 1.5em;
+    color: #ffffff;
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    max-width: 100%; /* Evita que el texto se salga de los límites */
+    margin-top: -10px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    
 }
 
 .project-card p {
@@ -301,9 +338,13 @@ nav a {
     height: auto;
     margin-top: -10px;
     padding: 30px;
-    position: relative; /* Añadimos posición relativa al contenedor */
+    position: relative;
+    transition: transform 0.3s ease; /* Agregamos una transición suave a la propiedad transform */
 }
 
+.project-image img:hover {
+    transform: scale(1.1); /* Al pasar el mouse por encima, la imagen se ampliará un 10% */
+}
 
 
 
@@ -327,9 +368,13 @@ nav a {
 
 /* Estilos para las imágenes de las herramientas en los proyectos */
 .project-tools img {
-    max-width: 60px; /* Ajusta el tamaño según tus necesidades */
+    width: 40px; /* Establece el ancho deseado */
+    height: auto; /* Para mantener la proporción original de la imagen */
     margin-right: 10px; /* Espacio entre las imágenes */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.614); /* Agrega sombreado */
 }
+
+
 
 
 /* Estilos para la sección "Educación" */
