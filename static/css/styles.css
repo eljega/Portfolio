@@ -147,6 +147,7 @@ p {
     background-color: #3b3b3b00;
     padding: 50px 0;
     text-align: center;
+
     margin-top: 20px; /* Ajusta el margen superior para alinear con los botones */
 }
 
@@ -495,6 +496,19 @@ e {
     transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
 
+.certificate-link {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.certificate-link img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
 
 /* Estilos para la sección "Habilidades" */
 #habilidades {
@@ -715,3 +729,5 @@ e {
     border-color: #007BFF; /* Cambio de color del borde al pasar el mouse (azul en este caso) */
     transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
+
+/* Añade estilos personalizados según tu preferencia visual. */
