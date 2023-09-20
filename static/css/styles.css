@@ -597,7 +597,7 @@ e {
 }
 
 /* Consulta de medios para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
     .testimonials-section {
         background-size: auto 100%; /* Hace que el fondo sea más pequeño y vertical */
         padding: 50px 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
