@@ -525,6 +525,16 @@ e {
     text-align: center;
 }
 
+@media (max-width: 767px){
+    #habilidades {
+        background-image: url('/static/images/backgroundhabilidadvertical.png'); /* Reemplaza con la ruta de tu imagen */
+        background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center center; /* Centra la imagen */
+    }
+    
+}
+
 .skills-header {
     margin-bottom: 30px;
     color: #ffffff;
@@ -586,6 +596,7 @@ e {
 
 
 /* Estilos para la sección de testimonios */
+/* Estilos para la sección de testimonios */
 .testimonials-section {
     background-image: url('/static/images/backgroundtestimonios.png'); /* Ruta de la imagen de fondo */
     background-size: cover;
@@ -600,8 +611,10 @@ e {
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 767px) {
     .testimonials-section {
-        background-size: auto 100%; /* Hace que el fondo sea más pequeño y vertical */
-        padding: 40px 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
+        background-image: url('/static/images/backgroundtestimoniosvertical.png'); /* Reemplaza con la ruta de tu imagen */
+        background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center center; /* Centra la imagen */
     }
 
     /* Ajusta otros estilos específicos para dispositivos móviles */
@@ -619,7 +632,7 @@ e {
 
     /* Ajusta otros estilos para dispositivos móviles */
     .testimonial-text {
-        font-size: 1em; /* Reduce el tamaño del texto */
+        font-size: 1em !important; /* Reduce el tamaño del texto */
         /* Otros estilos... */
     }
 
@@ -628,6 +641,12 @@ e {
         margin-top: 200px; /* Agrega espacio superior */
     }
 }
+
+/* Estilos adicionales para el contenido de testimonios en dispositivos móviles */
+.testimonial-content {
+    margin-top: 20px; /* Agrega espacio superior */
+}
+
 
 .testimonials-section h2 {
     font-size: 2.5em;
@@ -731,7 +750,7 @@ e {
 .testimonial-dot {
     width: 10px;
     height: 10px;
-    background-color: #999;
+    background-color: #ffffff;
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px;
@@ -740,7 +759,7 @@ e {
 }
 
 .testimonial-dot.active {
-    background-color: #333;
+    background-color: #00fffb;
 }
 
 
