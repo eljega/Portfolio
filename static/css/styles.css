@@ -636,6 +636,11 @@ e {
         /* Otros estilos... */
     }
 
+    .testimonial-author{
+        font-size: 1.3em !important; /* Reduce el tamaño del texto */
+        
+    }
+
     /* Ajusta el espaciado superior para los testimonios en dispositivos móviles */
     .testimonial.active {
         margin-top: 200px; /* Agrega espacio superior */
