@@ -587,20 +587,21 @@ e {
 
 /* Estilos para la sección de testimonios */
 .testimonials-section {
-    background-image: url('/static/images/backgroundtestimonios.png'); /* Reemplaza con la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen */
-    background-color: rgba(255, 255, 255, 0.7); /* Ajusta la transparencia */
-    padding: 201px 0;
+    background-image: url('/static/images/backgroundtestimonios.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.7); /* Capa semitransparente sobre el fondo */
+    padding: 221px 0; /* Espaciado superior e inferior */
     text-align: center;
+    position: relative; /* Agregamos posición relativa para el posicionamiento de elementos internos */
 }
 
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 767px) {
     .testimonials-section {
         background-size: auto 100%; /* Hace que el fondo sea más pequeño y vertical */
-        padding: 50px 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
+        padding: 40px 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
     }
 
     /* Ajusta otros estilos específicos para dispositivos móviles */
@@ -620,6 +621,11 @@ e {
     .testimonial-text {
         font-size: 1em; /* Reduce el tamaño del texto */
         /* Otros estilos... */
+    }
+
+    /* Ajusta el espaciado superior para los testimonios en dispositivos móviles */
+    .testimonial.active {
+        margin-top: 200px; /* Agrega espacio superior */
     }
 }
 
