@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
     const carousels = document.querySelectorAll(".carousel-container");
   
     carousels.forEach(function (carousel) {
@@ -35,3 +36,49 @@ document.addEventListener("DOMContentLoaded", function () {
       setInterval(nextSlide, 3000);
     });
   });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    // Obtén el contenedor de la animación
+    const introAnimation = document.querySelector(".intro-animation");
+
+    // Aplica la clase "animate-intro" después de un retraso de 1 segundo (1000 ms)
+    setTimeout(function () {
+        introAnimation.classList.add("animate-intro");
+    }, 200); // Puedes ajustar el tiempo según tus preferencias
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const testimonials = document.querySelectorAll(".testimonial");
+  const dots = document.querySelectorAll(".testimonial-dot");
+  let currentIndex = 0;
+
+  function showTestimonial(index) {
+      testimonials.forEach(function (testimonial) {
+          testimonial.classList.remove("active");
+      });
+      dots.forEach(function (dot) {
+          dot.classList.remove("active");
+      });
+
+      testimonials[index].classList.add("active");
+      dots[index].classList.add("active");
+  }
+
+  dots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () {
+          showTestimonial(index);
+          currentIndex = index;
+      });
+  });
+
+  function nextTestimonial() {
+      currentIndex++;
+      if (currentIndex >= testimonials.length) {
+          currentIndex = 0;
+      }
+      showTestimonial(currentIndex);
+  }
+
+
+});
