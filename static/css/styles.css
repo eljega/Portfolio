@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('../static/images/background.jpg') no-repeat center center fixed;
+    background: url('/static/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -75,7 +75,6 @@ header {
 }
 
 
-
 /* Estilo de la foto de perfil  */
 .profile-image {
     border-radius: 50%;
@@ -85,8 +84,6 @@ header {
     display: block;
     border: 3px solid #630466;
     margin-bottom: 10px;
-    transform: translateY(-50px); /* Empieza 50px arriba de su posición final */
-    opacity: 0; /* Comienza invisible */
     transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica transición suave */
     animation: border-color-animation 6s infinite; /* Aplica la animación de cambio de colores */
 }
@@ -100,13 +97,19 @@ header {
     100% { border-color: #f1ca09; } /* Color final (vuelve al color inicial) */
 }
 
-
-
-/* Aplicar animación cuando la clase "animate-profile" está presente */
-.animate-profile {
-    transform: translateY(0); /* Lleva la imagen a su posición final */
-    opacity: 1; /* La hace visible */
+/*animacion de portada*/
+.intro-animation {
+    opacity: 0; /* Inicialmente, la animación es invisible */
+    transform: translateY(-30px); /* Comienza 30px arriba de su posición final */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Aplica una transición suave */
 }
+
+.intro-animation.animate-intro {
+    opacity: 1; /* La hace visible */
+    transform: translateY(0); /* Lleva la animación a su posición final */
+}
+
+
 
 
 h1 {
@@ -121,6 +124,7 @@ p {
     font-family: Arial, sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif */
     font-weight: bold; /* Hace que el texto sea más grueso */
     max-width: 100%; /* Evita que el texto se salga de los límites */
+    text-shadow: 1px 1px 0 rgb(0, 0, 0); /* Sombra de texto menos difusa */
 }
 
 
@@ -512,6 +516,10 @@ e {
 
 /* Estilos para la sección "Habilidades" */
 #habilidades {
+    background-image: url('/static/images/backgroundhabilidad.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
     background-color: #9a9a9a; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
@@ -573,6 +581,138 @@ e {
     text-align: center; /* Centra el texto horizontalmente */
     width: 100%; /* Establece un ancho del 100% para que ocupe todo el espacio disponible */
 }
+
+
+
+
+/* Estilos para la sección de testimonios */
+.testimonials-section {
+    background-image: url('/static/images/backgroundtestimonios.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    background-color: rgba(255, 255, 255, 0.7); /* Ajusta la transparencia */
+    padding: 201px 0;
+    text-align: center;
+}
+
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fdfafa;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+
+}
+
+.testimonials-section t {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fdfafa;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+
+}
+
+.testimonials-section p {
+    font-size: 1.6em;
+    color: #010101;
+    text-shadow: 1px 1px 0 rgba(173, 6, 251, 0);
+    font-weight:bold
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial {
+    width: 700px;
+    height: 200px;
+    background-color: #ebb9f8;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    transform: translateX(0);
+    opacity: 1;
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Esto ajustará la imagen para llenar completamente el contenedor */
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+
+.testimonial-text {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.testimonial-author {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+.view-letter-button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #8200ad;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.view-letter-button:hover {
+    background-color: #fed70d;
+    transform: scale(1.1);
+}
+
+/* Controles de navegación de testimonios (puntos) */
+.testimonial-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-dot.active {
+    background-color: #333;
+}
+
+
+
 
 
 
