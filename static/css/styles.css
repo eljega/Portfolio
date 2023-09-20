@@ -395,8 +395,8 @@ nav a {
   }
   
   .carousel-slides img {
-    width: 100%;
-    max-width: 250px; /* Ajusta el ancho máximo según tu diseño */
+    width: auto;
+    max-width: auto; /* Ajusta el ancho máximo según tu diseño */
     height: auto;
     margin-left: -6px;
   }
