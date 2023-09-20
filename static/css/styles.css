@@ -596,6 +596,32 @@ e {
     text-align: center;
 }
 
+/* Consulta de medios para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .testimonials-section {
+        background-size: auto 100%; /* Hace que el fondo sea más pequeño y vertical */
+        padding: 50px 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
+    }
+
+    /* Ajusta otros estilos específicos para dispositivos móviles */
+    .testimonial {
+        width: 100%; /* Ajusta el ancho al 100% para ocupar el ancho de la pantalla */
+        max-width: none; /* Elimina el máximo ancho definido anteriormente */
+    }
+
+    /* Ajusta otros estilos para dispositivos móviles */
+    .testimonial-image img {
+        width: 80px; /* Reduce el tamaño de la imagen */
+        height: 80px; /* Reduce el tamaño de la imagen */
+        /* Otros estilos... */
+    }
+
+    /* Ajusta otros estilos para dispositivos móviles */
+    .testimonial-text {
+        font-size: 1em; /* Reduce el tamaño del texto */
+        /* Otros estilos... */
+    }
+}
 
 .testimonials-section h2 {
     font-size: 2.5em;
