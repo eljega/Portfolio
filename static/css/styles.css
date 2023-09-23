@@ -1,10 +1,10 @@
 /* Estilos generales */
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('/static/images/background.jpg') no-repeat center center fixed;
+    background: url('/static/images/background.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -81,6 +81,7 @@ header {
     width: 150px;
     height: 150px;
     margin: 10px auto;
+    padding: center;
     display: block;
     border: 3px solid #630466;
     margin-bottom: 10px;
@@ -151,7 +152,6 @@ p {
     background-color: #3b3b3b00;
     padding: 50px 0;
     text-align: center;
-
     margin-top: 20px; /* Ajusta el margen superior para alinear con los botones */
 }
 
@@ -198,6 +198,7 @@ p {
     max-width: 100%; /* Evita que el texto se salga de los límites */
     color: #ffffff;
     margin-bottom: 20px;
+
 }
 
 
@@ -272,7 +273,7 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: center;
 }
 
 
@@ -396,7 +397,7 @@ nav a {
   
   .carousel-slides img {
     width: auto;
-    max-width: 250px; /* Ajustar el ancho máximo según el diseño */
+    max-width: 250px; /* Ajusta el ancho máximo según tu diseño */
     height: auto;
     margin-left: -6px;
   }
@@ -516,7 +517,7 @@ e {
 
 /* Estilos para la sección "Habilidades" */
 #habilidades {
-    background-image: url('/static/images/backgroundhabilidad.png'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('/static/images/backgroundhabilidad.webp'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen */
@@ -527,7 +528,7 @@ e {
 
 @media (max-width: 767px){
     #habilidades {
-        background-image: url('/static/images/backgroundhabilidadvertical.png'); /* Reemplaza con la ruta de tu imagen */
+        background-image: url('/static/images/backgroundhabilidadvertical.webp'); /* Reemplaza con la ruta de tu imagen */
         background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         background-position: center center; /* Centra la imagen */
@@ -598,7 +599,7 @@ e {
 /* Estilos para la sección de testimonios */
 /* Estilos para la sección de testimonios */
 .testimonials-section {
-    background-image: url('/static/images/backgroundtestimonios.png'); /* Ruta de la imagen de fondo */
+    background-image: url('/static/images/backgroundtestimonios.webp'); /* Ruta de la imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -611,7 +612,7 @@ e {
 /* Consulta de medios para dispositivos móviles */
 @media (max-width: 767px) {
     .testimonials-section {
-        background-image: url('/static/images/backgroundtestimoniosvertical.png'); /* Reemplaza con la ruta de tu imagen */
+        background-image: url('/static/images/backgroundtestimoniosvertical.webp'); /* Reemplaza con la ruta de tu imagen */
         background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         background-position: center center; /* Centra la imagen */
@@ -777,7 +778,7 @@ e {
     background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
-    background: url('/static/images/background2.png') no-repeat center center fixed;
+    background: url('/static/images/background2.webp') no-repeat center center fixed;
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     
