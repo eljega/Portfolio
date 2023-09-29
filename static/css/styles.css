@@ -621,6 +621,7 @@ e {
     /* Ajusta otros estilos específicos para dispositivos móviles */
     .testimonial {
         width: 100%; /* Ajusta el ancho al 100% para ocupar el ancho de la pantalla */
+        height: 300px;
         max-width: none; /* Elimina el máximo ancho definido anteriormente */
     }
 
