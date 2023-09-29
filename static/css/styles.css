@@ -242,6 +242,7 @@ p {
 /* Ajuste de estilos en dispositivos móviles */
 @media (max-width: 767px) {
     .personal-info {
+        font-size: 0.7em;
         display: grid; /* Cambia a un diseño de dos columnas en dispositivos móviles */
         grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
         gap: 10px; /* Espaciado entre columnas */
@@ -250,6 +251,7 @@ p {
     }
 
     .info-item {
+        font-size: 0.9em;
         width: 58%; /* Establece el ancho de cada elemento al 100% para ocupar todo el ancho de la columna */
         margin-bottom: -5px; /* Agrega espacio inferior entre los elementos */
     }
