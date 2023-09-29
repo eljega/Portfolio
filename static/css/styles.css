@@ -132,6 +132,7 @@ p {
 .buttons a {
     display: inline-block;
     margin: 10px;
+    margin-bottom: 47px;
     padding: 10px 20px;
     background-color: #9628bd;
     color: #fff;
@@ -147,6 +148,15 @@ p {
     transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
 }
 
+.buttons img {
+    max-width: 40px; /* Ajusta el ancho máximo según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    border: 2px solid transparent; /* Borde transparente de 2px alrededor de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    transition: border-color 0.3s, transform 0.3s; /* Efecto de transición suave en el borde y el tamaño */
+    border-color: #ffffff;
+}
+
 /* Estilos de la sección "Sobre Mí" */
 #sobre-mi {
     background-color: #3b3b3b00;
@@ -159,7 +169,7 @@ p {
 
 .about-me {
     background-color: #3b3b3b00;
-    padding: 30px;
+    padding: 5px;
     text-align: center;
     max-width: 800px;
     margin: -30px auto;
@@ -618,11 +628,22 @@ e {
         background-position: center center; /* Centra la imagen */
     }
 
+    
+
     /* Ajusta otros estilos específicos para dispositivos móviles */
     .testimonial {
-        width: 100%; /* Ajusta el ancho al 100% para ocupar el ancho de la pantalla */
+        width: 700px;
         height: 380px !important;
-        max-width: none; /* Elimina el máximo ancho definido anteriormente */
+        background-color: #ebb9f8;
+        border-radius: 5px;
+        margin: 0 20px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        text-align: left;
+        transform: translateX(0);
+        opacity: 1;
+        display: none;
     }
 
     /* Ajusta otros estilos para dispositivos móviles */
@@ -779,7 +800,7 @@ e {
     background-color: #3b3b3b; /* Puedes elegir un color de fondo que contraste con el encabezado */
     padding: 50px 0;
     text-align: center;
-    background: url('/static/images/background2.webp') no-repeat center center fixed;
+    background: url('/static/images/background2.webp') no-repeat center center;
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la sección */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     
@@ -887,7 +908,7 @@ e {
 }
 
 .social-links h3 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     
 }
 
@@ -929,4 +950,3 @@ e {
 }
 
 /* Añade estilos personalizados según tu preferencia visual. */
-
