@@ -402,7 +402,7 @@ nav a {
     position: relative;
     width: 100%;
     max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
-    margin: 0 auto;
+    margin: -30px auto;
     overflow: hidden;
   }
   
